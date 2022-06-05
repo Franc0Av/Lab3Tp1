@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer trabajo práctico</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <form id="form">
+        <h1 class="titulo">SIMULADOR DE PLAZO FIJO</h1>
+        <div class="contenedor">
+            <label for="nombre">Nombre y Apellido: </label>
+            <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Ingrese su nombre y apellido"/>
+            <div id="error1"></div>
+        </div>
+        <div class="contenedor">
+            <label for="inversion">Monto a Invertir: </label>
+            <input type="number" name="montoInvertido" id="montoInvertido" placeholder= 1000 />
+            <div id="error2"></div>
+        </div>
+        <div class="contenedor">
+            <label for="dias">Cantidad de días: </label>
+            <input type="number" name="cantidadDias" id="cantidadDias" placeholder= 30 />
+            <div id="error3"></div>
+        </div>
+        <button type="button" id="btnCalcular">CALCULAR</button>
+        <button type="button" id="btnReinvertir">REINVERTIR</button>
+    </form>
+    <div class="calculoInversion" id="calculoInversion"></div>
+    <div class="cuadroReinventir" id="calculoReinvertir"></div>
+</body>
+</html>
